@@ -227,9 +227,9 @@ body{
     font-family: Josefin Slab;
     font-weight: bold;
     text-wrap: nowrap;
-    text-align: center;
+    text-align: start;
     font-size: 1.15em;
-    margin-right: 1em;
+    margin-right: 0.5em;
 }
 #filterValue{
     margin-top: 3px;
@@ -279,75 +279,6 @@ body{
 }
 #colorBlindnessButton:hover #eye_eye{
     fill: white;
-    transform: skewY(50px);
-}
-
-#colorBlindnessButton:hover #lid {
-    -webkit-animation: blink 2.4s infinite;
-            animation: blink 2.4s infinite;
-}
-
-#colorBlindnessButton:hover #eye {
-    -webkit-animation: squeeze 2.4s infinite;
-            animation: squeeze 2.4s infinite;
-}
-
-@-webkit-keyframes blink {
-    90% {
-        transform: none;
-        -webkit-animation-timing-function: ease-in;
-                animation-timing-function: ease-in;
-    }
-    93% {
-        transform: translateY(15px) scaleY(0);
-    }
-    100% {
-        -webkit-animation-timing-function: ease-out;
-                animation-timing-function: ease-out;
-    }
-}
-
-@keyframes blink {
-    90% {
-        transform: none;
-        -webkit-animation-timing-function: ease-in;
-                animation-timing-function: ease-in;
-    }
-    93% {
-        transform: translateY(15px) scaleY(0);
-    }
-    100% {
-        -webkit-animation-timing-function: ease-out;
-                animation-timing-function: ease-out;
-    }
-}
-@-webkit-keyframes squeeze {
-    90% {
-        transform: none;
-        -webkit-animation-timing-function: ease-in;
-                animation-timing-function: ease-in;
-    }
-    93% {
-        transform: translateY(3px) scaleY(0.8);
-    }
-    100% {
-        -webkit-animation-timing-function: ease-out;
-                animation-timing-function: ease-out;
-    }
-}
-@keyframes squeeze {
-    90% {
-        transform: none;
-        -webkit-animation-timing-function: ease-in;
-                animation-timing-function: ease-in;
-    }
-    93% {
-        transform: translateY(3px) scaleY(0.8);
-    }
-    100% {
-        -webkit-animation-timing-function: ease-out;
-                animation-timing-function: ease-out;
-    }
 }
 
 .tooltip_copy, .tooltip_star{
@@ -374,13 +305,6 @@ body{
 }
 
 
-.info_svg{
-    fill: black;
-    width: 18px;
-    height: 18px;
-    transition: .4s ease-in-out;
-    cursor: pointer;
-}
 .donesvg{
     display: none;
 }
@@ -515,11 +439,6 @@ body{
     .bottom{
         gap: 0.5em;
     }
-    .info_svg{
-        fill: black;
-        width: 12px;
-        height: 12px;
-    }
 }
 
 
@@ -553,59 +472,4 @@ body{
   }
   .animate_main {
     animation: scaleMain 0.8s ease-in-out forwards;
-  }
-
-
-
-/* SMALL-DEVICE */
-
-.small_device{
-    width: 100%;
-    height: 100dvh;
-    display: none;
-    padding: 5px;
-    background-color: var(--small-device-card-bg);
-    background-image: linear-gradient(0deg, transparent 24%, var(--small-device-card-line) 25%, var(--small-device-card-line) 26%, transparent 27%,transparent 74%, var(--small-device-card-line) 75%, var(--small-device-card-line) 76%, transparent 77%,transparent),
-        linear-gradient(90deg, transparent 24%, var(--small-device-card-line) 25%, var(--small-device-card-line) 26%, transparent 27%,transparent 74%, var(--small-device-card-line) 75%, var(--small-device-card-line) 76%, transparent 77%,transparent);
-    background-size: 55px 55px;
-  }
-  .small_device_card{
-    width: 100%;
-    padding: 5px;
-    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
-    backdrop-filter: blur(1px);
-    border-radius: 10px;
-    border: 1px solid var(--small-device-card-border);
-  }
-  .small_device_text{
-    font-weight: bold;
-    font-size: clamp(0.1rem, 0.3043rem + 3.4783vw, 3rem);
-    color: var(--Color4);
-  }
-  
-  @media only screen and (max-width: 279px) {
-    .container{
-        display: none;
-    }
-    body{
-      margin: 0;
-      padding: 0;
-      background-color: #F8EBC9;
-    }
-    .small_device{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        flex-direction: column;
-        font-weight: bold;
-        color: black;
-        font-family: Josefin Slab;
-        line-height: 1em;
-    }
-  }
-  @media only screen and (max-width: 80px) {
-    .small_device_card{
-        border-radius: 5px;
-    }
   }

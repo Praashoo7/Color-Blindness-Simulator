@@ -1,6 +1,6 @@
 let currentFilterIndex = 0;
   const filters = [
-    { name: 'Type : None', value: 'none' },
+    { name: 'Type : None type', value: 'none' },
     { name: 'Type : Protanopia', value: 'url(#protanopia)' },
     { name: 'Type : Deuteranopia', value: 'url(#deuteranopia)' },
     { name: 'Type : Tritanopia', value: 'url(#tritanopia)' },
@@ -32,9 +32,12 @@ let currentFilterIndex = 0;
   }
 
   function updateSpanInfo() {
+    const filterName = filters[currentFilterIndex].name;
+    const filterNameWithLineBreak = filterName.replace('Type :', 'Type :<br>');
     spanElement.textContent = currentFilterIndex;
-    filterNameSpan.textContent = filters[currentFilterIndex].name;
-  }
+    filterNameSpan.innerHTML = filterNameWithLineBreak;
+}
+
 
 
 function animateDivs() {
