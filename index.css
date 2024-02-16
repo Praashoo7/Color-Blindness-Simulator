@@ -230,6 +230,7 @@ body{
     text-align: start;
     font-size: 1.15em;
     margin-right: 0.5em;
+    line-height: 1.15em;
 }
 #filterValue{
     margin-top: 3px;
@@ -367,7 +368,7 @@ body{
 .info_title{
     width: 100%;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.1em;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -409,9 +410,28 @@ body{
     cursor: pointer;
 }
 
+  /* Apply animation to boxes */
+  .animate_outer_inner {
+    animation: scaleOuterInner 0.6s ease-in-out forwards;
+  }
+  .animate_main {
+    animation: scaleMain 0.8s ease-in-out forwards;
+  }
+
+  .github_user, .github_svg{
+    transition: .3s ease-in-out;
+    cursor: pointer;
+  }
+  .github_user:hover, .github_svg:hover{
+    color: red;
+  }
+  .information{
+    line-height: 1.15em;
+  }
+
 @media only screen and (min-width: 2000px) {
     #filterName{
-        font-size: clamp(0.1rem, 0.3043rem + 3.4783vw, 2rem);
+        font-size: clamp(0.1rem, 0.3043rem + 3.4783vw, 1.25rem);
     }
 }
 @media only screen and (max-width: 1320px) {
@@ -435,9 +455,13 @@ body{
     }
     #filterName{
         font-size: clamp(0.1rem, 0.3043rem + 3.4783vw, 3rem);
+        margin-right: 0.25em;
     }
     .bottom{
         gap: 0.5em;
+    }
+    .information{
+        line-height: 1em;
     }
 }
 
@@ -464,12 +488,4 @@ body{
     100%{
         transform: scale(1);
     }
-  }
-
-  /* Apply animation to boxes */
-  .animate_outer_inner {
-    animation: scaleOuterInner 0.6s ease-in-out forwards;
-  }
-  .animate_main {
-    animation: scaleMain 0.8s ease-in-out forwards;
   }
