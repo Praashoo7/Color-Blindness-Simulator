@@ -5,7 +5,7 @@
 
 ## Credits
 
-Filter from [hail2u](https://github.com/hail2u), [Repo](https://github.com/hail2u/color-blindness-emulation)
+Filter from [hail2u](https://github.com/hail2u) [[Repo](https://github.com/hail2u/color-blindness-emulation)]
 
 ## License
 
