@@ -13,6 +13,13 @@ body{
     background-color: #F8EBC9;
 }
 
+.COLOR-FILTERS-SVG{
+    display: none;
+}
+
+
+/* ------------------------------- CONTAINERS ------------------------------- */
+
 .container{  
     display: grid;
     width: 100%;
@@ -22,10 +29,6 @@ body{
     grid-auto-columns: 1fr;
     gap: 20px 20px;
     border: 15px solid transparent;
-}
-
-#main{
-    min-width: 290px;
 }
 
 .container .sample:nth-child(1){
@@ -175,11 +178,10 @@ body{
 .sample:hover{
     scale: 0.95;
 }
-#outer5{
-    display: flex;
-    align-items: start;
-    justify-content: end;
-}
+
+
+/* ------------------------------- GIT & COPY-BUTTONS ------------------------------- */
+
 .git, .copycode{
     width: 3em;
     height: 3em;
@@ -193,13 +195,19 @@ body{
     transition: .2s ease-in-out;
     cursor: pointer;
 }
-.container div:nth-child(5):hover .git{
-    scale: 1.006;
-}
 .git:hover, .copycode:hover{
     background-color: #f1f1f1;
 }
+.donesvg{
+    display: none;
+}
 
+
+/* ------------------------------- MAIN-DIV ------------------------------- */
+
+#main{
+    min-width: 290px;
+}
 .container div:nth-child(13){
     background-color: transparent /* #FC644D */;
     display: flex;
@@ -210,6 +218,10 @@ body{
     border-radius: 20px;
     border: 1px solid black;
 }
+
+
+/* ------------------------------- INSIDE-MAIN ------------------------------- */
+
 .top{
     width: 100%;
     height: 100%;
@@ -255,9 +267,8 @@ body{
     gap: 0.75em;
 }
 
-.vision_SVGS{
-    display: none;
-}
+
+/* ------------------------------- EYE ------------------------------- */
   
 #colorBlindnessButton{
     background-color: transparent;
@@ -285,6 +296,9 @@ body{
     fill: white;
 }
 
+
+/* ------------------------------- TOOLTIPS ------------------------------- */
+
 .tooltip_copy, .tooltip_star{
     position: absolute;
     padding: 1em;
@@ -309,12 +323,8 @@ body{
 }
 
 
-.donesvg{
-    display: none;
-}
+/* ------------------------------- INFO-POPUP ------------------------------- */
 
-
-/* POPUPS */
 .info_button{
     display: flex;
     align-items: center;
@@ -412,25 +422,52 @@ body{
     opacity: 0.8;
     cursor: pointer;
 }
-
-  /* Apply animation to boxes */
-  .animate_outer_inner {
-    animation: scaleOuterInner 0.6s ease-in-out forwards;
-  }
-  .animate_main {
-    animation: scaleMain 0.8s ease-in-out forwards;
-  }
-
-  .github_user, .github_svg{
+.github_user, .github_svg{
     transition: .3s ease-in-out;
     cursor: pointer;
-  }
-  .github_user:hover, .github_svg:hover{
+}
+.github_user:hover, .github_svg:hover{
     color: red;
-  }
-  .information{
+}
+.information{
     line-height: 1.15em;
+}
+
+
+/* ------------------------------- CONTAINERS-ANIMATION-ONCLICK ------------------------------- */
+
+.animate_outer_inner {
+    animation: scaleOuterInner 0.6s ease-in-out forwards;
+}
+.animate_main {
+    animation: scaleMain 0.8s ease-in-out forwards;
+}
+
+@keyframes scaleOuterInner {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.95);
+    }
+    100%{
+        transform: scale(1);
+    }
   }
+@keyframes scaleMain {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.9);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+  
+
+/* ------------------------------- MEDIA-QUERIES ------------------------------- */
 
 @media only screen and (min-width: 2000px) {
     #filterName{
@@ -476,28 +513,3 @@ body{
         padding: 1em;
     }
 }
-
-
-
-@keyframes scaleOuterInner {
-    0%{
-        transform: scale(1);
-    }
-    50%{
-        transform: scale(0.95);
-    }
-    100%{
-        transform: scale(1);
-    }
-  }
-@keyframes scaleMain {
-    0%{
-        transform: scale(1);
-    }
-    50%{
-        transform: scale(0.9);
-    }
-    100%{
-        transform: scale(1);
-    }
-  }

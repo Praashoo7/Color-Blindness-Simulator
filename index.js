@@ -1,3 +1,5 @@
+/* --------------------- FILTER-SWITCH --------------------- */
+
 let currentFilterIndex = 0;
   const filters = [
     { name: 'Type : None type', value: 'none' },
@@ -39,6 +41,7 @@ let currentFilterIndex = 0;
 }
 
 
+/* --------------------- DIV-ANIMATION-ONCLICK --------------------- */
 
 function animateDivs() {
   var innerdivIds = ['inner1', 'inner2', 'inner3', 'inner4', 'inner5', 'inner6', 'inner7', 'inner8'];
@@ -75,9 +78,7 @@ function animateDivs() {
 }
 
 
-
-
-  // POPUP //
+/* --------------------- POPUP --------------------- */
 
 function openPop(ID) {
 
@@ -103,10 +104,172 @@ function closePop(ID) {
 }
 
 
-
+/* --------------------- COPY-CODE --------------------- */
 
 // Define a variable to store the text
-var textToCopy = "Text to be copied";
+var textToCopy = `
+  <!-- SVG FROM [ https://github.com/hail2u/color-blindness-emulation ] -->
+  <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+  <svg class="COLOR-FILTERS-SVG"
+  xmlns="http://www.w3.org/2000/svg"
+  version="1.1">
+  <defs>
+      <filter id="protanopia">
+      <feColorMatrix
+          in="SourceGraphic"
+          type="matrix"
+          values="0.567, 0.433, 0,     0, 0
+                  0.558, 0.442, 0,     0, 0
+                  0,     0.242, 0.758, 0, 0
+                  0,     0,     0,     1, 0"/>
+      </filter>
+      <filter id="protanomaly">
+      <feColorMatrix
+          in="SourceGraphic"
+          type="matrix"
+          values="0.817, 0.183, 0,     0, 0
+                  0.333, 0.667, 0,     0, 0
+                  0,     0.125, 0.875, 0, 0
+                  0,     0,     0,     1, 0"/>
+      </filter>
+      <filter id="deuteranopia">
+      <feColorMatrix
+          in="SourceGraphic"
+          type="matrix"
+          values="0.625, 0.375, 0,   0, 0
+                  0.7,   0.3,   0,   0, 0
+                  0,     0.3,   0.7, 0, 0
+                  0,     0,     0,   1, 0"/>
+      </filter>
+      <filter id="deuteranomaly">
+      <feColorMatrix
+          in="SourceGraphic"
+          type="matrix"
+          values="0.8,   0.2,   0,     0, 0
+                  0.258, 0.742, 0,     0, 0
+                  0,     0.142, 0.858, 0, 0
+                  0,     0,     0,     1, 0"/>
+      </filter>
+      <filter id="tritanopia">
+      <feColorMatrix
+          in="SourceGraphic"
+          type="matrix"
+          values="0.95, 0.05,  0,     0, 0
+                  0,    0.433, 0.567, 0, 0
+                  0,    0.475, 0.525, 0, 0
+                  0,    0,     0,     1, 0"/>
+      </filter>
+      <filter id="tritanomaly">
+      <feColorMatrix
+          in="SourceGraphic"
+          type="matrix"
+          values="0.967, 0.033, 0,     0, 0
+                  0,     0.733, 0.267, 0, 0
+                  0,     0.183, 0.817, 0, 0
+                  0,     0,     0,     1, 0"/>
+      </filter>
+      <filter id="achromatopsia">
+      <feColorMatrix
+          in="SourceGraphic"
+          type="matrix"
+          values="0.299, 0.587, 0.114, 0, 0
+                  0.299, 0.587, 0.114, 0, 0
+                  0.299, 0.587, 0.114, 0, 0
+                  0,     0,     0,     1, 0"/>
+      </filter>
+      <filter id="achromatomaly">
+      <feColorMatrix
+          in="SourceGraphic"
+          type="matrix"
+          values="0.618, 0.320, 0.062, 0, 0
+                  0.163, 0.775, 0.062, 0, 0
+                  0.163, 0.320, 0.516, 0, 0
+                  0,     0,     0,     1, 0"/>
+      </filter>
+  </defs>
+  </svg>
+
+  <button id="colorBlindnessButton">
+      <svg class="eye_main" width="24" height="24" viewBox="0 0 30 30" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+              <path d="M0,15.089434 C0,16.3335929 5.13666091,24.1788679 14.9348958,24.1788679 C24.7325019,24.1788679 29.8697917,16.3335929 29.8697917,15.089434 C29.8697917,13.8456167 24.7325019,6 14.9348958,6 C5.13666091,6 0,13.8456167 0,15.089434 Z" id="outline"></path>
+              <mask id="mask">
+              <rect width="100%" height="100%" fill="white"></rect>
+              <use xlink:href="#outline" id="lid" fill="black"/>
+              </mask>
+          </defs>
+          <g id="eye">
+              <path id="eye_eye" d="M0,15.089434 C0,16.3335929 5.13666091,24.1788679 14.9348958,24.1788679 C24.7325019,24.1788679 29.8697917,16.3335929 29.8697917,15.089434 C29.8697917,13.8456167 24.7325019,6 14.9348958,6 C5.13666091,6 0,13.8456167 0,15.089434 Z M14.9348958,22.081464 C11.2690863,22.081464 8.29688487,18.9510766 8.29688487,15.089434 C8.29688487,11.2277914 11.2690863,8.09740397 14.9348958,8.09740397 C18.6007053,8.09740397 21.5725924,11.2277914 21.5725924,15.089434 C21.5725924,18.9510766 18.6007053,22.081464 14.9348958,22.081464 L14.9348958,22.081464 Z M18.2535869,15.089434 C18.2535869,17.0200844 16.7673289,18.5857907 14.9348958,18.5857907 C13.1018339,18.5857907 11.6162048,17.0200844 11.6162048,15.089434 C11.6162048,13.1587835 13.1018339,11.593419 14.9348958,11.593419 C15.9253152,11.593419 14.3271242,14.3639878 14.9348958,15.089434 C15.451486,15.7055336 18.2535869,14.2027016 18.2535869,15.089434 L18.2535869,15.089434 Z" ></path>
+              <use xlink:href="#outline" mask="url(#mask)" fill="#FFFFFF"/>
+          </g>
+      </svg>
+  </button>
+
+  <style>
+      
+      .COLOR-FILTERS-SVG{
+          display: none;
+      }
+      
+      #colorBlindnessButton{
+          background-color: transparent;
+          border: 1px solid black;
+          border-radius: 8px;
+          width: 3em;
+          height: 3em;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          transition: .4s ease-in-out;
+      }
+      #colorBlindnessButton:hover{
+          background-color: #171717;
+      }
+      .eye_main{
+          transition: .4s ease-in-out;
+      }
+      #eye_eye{
+          fill: black;
+          transition: .4s ease-in-out;
+      }
+      #colorBlindnessButton:hover #eye_eye{
+          fill: white;
+      }
+      
+  </style>
+      
+  <script>
+      
+      let currentFilterIndex = 0;
+        const filters = [
+          { name: 'Type : None type', value: 'none' },
+          { name: 'Type : Protanopia', value: 'url(#protanopia)' },
+          { name: 'Type : Deuteranopia', value: 'url(#deuteranopia)' },
+          { name: 'Type : Tritanopia', value: 'url(#tritanopia)' },
+          { name: 'Type : Protanomaly', value: 'url(#protanomaly)' },
+          { name: 'Type : Deuteranomaly', value: 'url(#deuteranomaly)' },
+          { name: 'Type : Tritanomaly', value: 'url(#tritanomaly)' },
+          { name: 'Type : Achromatopsia', value: 'url(#achromatopsia)' },
+          { name: 'Type : Achromatomaly', value: 'url(#achromatomaly)' }
+        ];
+      
+        const colorBlindnessButton = document.getElementById('colorBlindnessButton');
+      
+      
+        colorBlindnessButton.addEventListener('click', () => {
+          currentFilterIndex = (currentFilterIndex + 1) % filters.length;
+          applyColorBlindnessFilter();
+        });
+      
+        function applyColorBlindnessFilter() {
+          const filter = filters[currentFilterIndex].value;
+          document.body.style.filter = filter;
+        }
+      
+  </script>
+
+`;
 
 document.getElementById("copyButton").addEventListener("click", function() {
   // Create a temporary textarea element
@@ -129,16 +292,16 @@ document.getElementById("copyButton").addEventListener("click", function() {
   document.body.removeChild(tempTextArea);
 
   // Select the first element with class 'copysvg'
-var copySVG = document.getElementsByClassName('copysvg')[0];
+var copySVG = document.querySelector('.copysvg');
 // Select the first element with class 'donesvg'
-var doneSVG = document.getElementsByClassName('donesvg')[0];
-var tooltipText = document.getElementsByClassName('tooltip_copy')[0];
+var doneSVG = document.querySelector('.donesvg');
+var tooltipText = document.querySelector('.tooltip_copy');
 
 // Hide 'copysvg' and show 'donesvg'
 copySVG.style.display = 'none';
 doneSVG.style.display = 'block';
 tooltipText.textContent = 'Copied!';
-tooltipText.style.transform = 'translateY(-50px) translateX(18px)';
+tooltipText.style.marginRight = '0.5em';
 
 // Set a timeout to revert the changes after 3 seconds
 setTimeout(function() {
@@ -146,6 +309,6 @@ setTimeout(function() {
   copySVG.style.display = 'block';
   doneSVG.style.display = 'none';
   tooltipText.textContent = 'Copy code!';
-  tooltipText.style.transform = 'translateY(-50px) translateX(25px)';
+  tooltipText.style.marginRight = 0;
 }, 3000); // 3000 milliseconds = 3 seconds
 });
