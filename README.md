@@ -2,9 +2,10 @@
 
 ![Readme Image](Color-Blindness-Simulator.png)
 
-## Credits
+## Copied Button
 
 ![Copied Code Image](Copied-Code.png)
+This is what the Copied Button looks like which you can add on your webpage to go through all Filters!
 
 ## Credits
 
