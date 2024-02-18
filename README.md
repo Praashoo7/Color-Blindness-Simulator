@@ -2,13 +2,13 @@
 
 This is a Color Blindness Simulator where you can simulate all 7 types of color blindness and see each type displayed. You can also simply copy the "EYE" and add it to your webpage and go through all filters to check how accessible your webpage is for Color Blind individuals.
 
-![Readme Image](Color-Blindness-Simulator.png)
+![Readme Image](ReadMe-Images/Color-Blindness-Simulator.png)
 
 ## Copied Button
 
 This is what the Copied Button looks like which you can add on your webpage to go through all Filters!
 
-![Copied Code Image](Copied-Code.png)
+![Copied Code Image](ReadMe-Images/Copied-Code.png)
 
 ## Credits
 
