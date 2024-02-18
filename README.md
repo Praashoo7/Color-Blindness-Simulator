@@ -8,7 +8,7 @@ This is a Color Blindness Simulator where you can simulate all 7 types of color 
 
 This is what the Copied Button looks like which you can add on your webpage to go through all Filters!
 
-![Copied Code Image](ReadMe-Images/Copied-Code.png)
+![Copied Code Image](ReadMe-Images/Copied-CodeS.png)
 
 ## Credits
 
