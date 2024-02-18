@@ -10,10 +10,6 @@ This is what the Copied Button looks like which you can add on your webpage to g
 
 ![Copied Code Image](ReadMe-Images/Copied-Code.png)
 
-## Credits
-
-Filters are from [hail2u](https://github.com/hail2u) [[Repo](https://github.com/hail2u/color-blindness-emulation)]
-
 ## License
 
 Color-Blindness-Simulator is open-source Software Licensed under the [MIT License](https://github.com/Praashoo7/Color-Blindness-Simulator/blob/main/LICENSE)
