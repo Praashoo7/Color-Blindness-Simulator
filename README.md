@@ -2,6 +2,9 @@
 
 ![Readme Image](Color-Blindness-Simulator.png)
 
+## Credits
+
+![Copied Code Image](Copied-Code.png)
 
 ## Credits
 
