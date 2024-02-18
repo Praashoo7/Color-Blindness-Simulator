@@ -12,7 +12,7 @@ This is what the Copied Button looks like which you can add on your webpage to g
 
 ## Credits
 
-Filter from [hail2u](https://github.com/hail2u) [[Repo](https://github.com/hail2u/color-blindness-emulation)]
+Filters are from [hail2u](https://github.com/hail2u) [[Repo](https://github.com/hail2u/color-blindness-emulation)]
 
 ## License
 
