@@ -285,9 +285,6 @@ body{
 #colorBlindnessButton:hover{
     background-color: #171717;
 }
-.eye_main{
-    transition: .4s ease-in-out;
-}
 #eye_eye{
     fill: black;
     transition: .4s ease-in-out;
@@ -296,10 +293,48 @@ body{
     fill: white;
 }
 
+#lid{
+    animation: eye 2s ease-in-out infinite;
+}
+#colorBlindnessButton:hover #lid{
+    animation: none;
+}
+
+@keyframes eye {
+    0%{
+        transform: scaleX(1) scaleY(1);
+        transform-origin: center;
+    }
+    10%{
+        transform: scaleX(1) scaleY(0);
+        transform-origin: center;
+    }
+    20%{
+        transform: scaleX(1) scaleY(1);
+        transform-origin: center;
+    }
+    75%{
+        transform: scaleX(1) scaleY(1);
+        transform-origin: center;
+    }
+    80%{
+        transform: scaleX(1) scaleY(0);
+        transform-origin: center;
+    }
+    85%{
+        transform: scaleX(1) scaleY(1);
+        transform-origin: center;
+    }
+    100%{
+        transform: scaleX(1) scaleY(1);
+        transform-origin: center;
+    }
+}
+
 
 /* ------------------------------- TOOLTIPS ------------------------------- */
 
-.tooltip_copy, .tooltip_star{
+.tooltip_copy, .tooltip_star, .tooltip_info{
     position: absolute;
     padding: 1em;
     background-color: #252525;
@@ -320,6 +355,15 @@ body{
     opacity: 1;
     visibility: visible;
     transform: translateY(-50px) translateX(25px);
+}
+
+.tooltip_info{
+    transform: translateY(-40px) translateX(-43px);
+}
+.info_button:hover + .tooltip_info{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-50px) translateX(-43px);
 }
 
 
@@ -431,6 +475,7 @@ body{
 }
 .information{
     line-height: 1.15em;
+    font-size: 0.9em;
 }
 
 

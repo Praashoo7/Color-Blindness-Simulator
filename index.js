@@ -189,7 +189,7 @@ version="1.1">
 <button id="colorBlindnessButton">
     <svg class="eye_main" width="24" height="24" viewBox="0 0 30 30" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
         <defs>
-            <path d="M0,15.089434 C0,16.3335929 5.13666091,24.1788679 14.9348958,24.1788679 C24.7325019,24.1788679 29.8697917,16.3335929 29.8697917,15.089434 C29.8697917,13.8456167 24.7325019,6 14.9348958,6 C5.13666091,6 0,13.8456167 0,15.089434 Z" id="outline"></path>
+            <path d="M0,15.089434 C0,16.3335929 5.13666091,24.1788679 14.9348958,24.1788679 C24.7325019,24.1788679 29.8697917,16.3335929 29.8697917,15.089434 C29.8697917,13.8456167 24.7325019,6 14.9348958,6 C5.13666091,6 0,13.8456167 0,15.089434 Z" id="outline" fill="black"></path>
             <mask id="mask">
             <rect width="100%" height="100%" fill="white"></rect>
             <use xlink:href="#outline" id="lid" fill="black"/>
@@ -229,6 +229,7 @@ version="1.1">
 
     #filterName, #filterValue{
       font-family: Josefin Slab;
+      color: black;
       line-height: 1.15em;
       font-weight: bold;
     }
@@ -248,15 +249,50 @@ version="1.1">
     #colorBlindnessButton:hover{
         background-color: #171717;
     }
-    .eye_main{
-        transition: .4s ease-in-out;
-    }
     #eye_eye{
         fill: black;
         transition: .4s ease-in-out;
     }
     #colorBlindnessButton:hover #eye_eye{
         fill: white;
+    }
+
+    #lid{
+      animation: eye 2s ease-in-out infinite;
+    }
+    #colorBlindnessButton:hover #lid{
+      animation: none;
+    }
+  
+    @keyframes eye {
+      0%{
+          transform: scaleX(1) scaleY(1);
+          transform-origin: center;
+      }
+      10%{
+          transform: scaleX(1) scaleY(0);
+          transform-origin: center;
+      }
+      20%{
+          transform: scaleX(1) scaleY(1);
+          transform-origin: center;
+      }
+      75%{
+          transform: scaleX(1) scaleY(1);
+          transform-origin: center;
+      }
+      80%{
+          transform: scaleX(1) scaleY(0);
+          transform-origin: center;
+      }
+      85%{
+          transform: scaleX(1) scaleY(1);
+          transform-origin: center;
+      }
+      100%{
+          transform: scaleX(1) scaleY(1);
+          transform-origin: center;
+      }
     }
     
 </style>
