@@ -8,11 +8,7 @@ This is a Color Blindness Simulator where you can simulate all 7 types of color 
 
 This is what the Copied Button looks like which you can add on your webpage to go through all Filters!
 
-![Copied Code Image](ReadMe-Images/Copied-CodeSW.png)
-
-## Credits
-
-Filters are from [hail2u](https://github.com/hail2u) [[Repo](https://github.com/hail2u/color-blindness-emulation)]
+![Copied Code Image](ReadMe-Images/Copied-Code.png)
 
 ## License
 
