@@ -213,7 +213,6 @@ version="1.1">
     }
     
     .main{
-      width: max-content;
       padding: 0.5em;
       padding-right: 0.85em;
       border-radius: 10px;
@@ -223,7 +222,6 @@ version="1.1">
       justify-content: start;
       gap: 0.75em;
       border: 1px solid black;
-      min-width: 190px;
       background-color: #F8EBC9;
     }
 
@@ -232,6 +230,9 @@ version="1.1">
       color: black;
       line-height: 1.15em;
       font-weight: bold;
+    }
+    #filterName{
+      width: 139px;
     }
 
     #colorBlindnessButton{
