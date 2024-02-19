@@ -369,7 +369,7 @@ var tooltipText = document.querySelector('.tooltip_copy');
 copySVG.style.display = 'none';
 doneSVG.style.display = 'block';
 tooltipText.textContent = 'Copied!';
-tooltipText.style.marginRight = '0.5em';
+tooltipText.style.marginRight = '0.75em';
 
 // Set a timeout to revert the changes after 3 seconds
 setTimeout(function() {

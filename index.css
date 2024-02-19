@@ -342,19 +342,19 @@ body{
     font-family: Josefin Slab;
     border-radius: 10px;
     opacity: 0;
-    transform: translateY(-40px) translateX(25px);
+    transform: translateY(-40px) translateX(30px);
     visibility: hidden;
     transition: all 0.3s ease;
 }
 .git:hover + .tooltip_star{
     opacity: 1;
     visibility: visible;
-    transform: translateY(-50px) translateX(25px);
+    transform: translateY(-50px) translateX(30px);
 }
 .copycode:hover + .tooltip_copy{
     opacity: 1;
     visibility: visible;
-    transform: translateY(-50px) translateX(25px);
+    transform: translateY(-50px) translateX(30px);
 }
 
 .tooltip_info{
