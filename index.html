@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Color Blindness Simulator">
     <title>Color Blindness Simulator</title>
     <link rel="stylesheet" href="index.css">
-    <link class="favicon" rel="icon" href="ReadMe-Images/eye.svg">
+    <link class="favicon" rel="icon" href="eye.svg">
 </head>
 <body>
 
@@ -16,13 +17,11 @@
     version="1.1">
     <defs>
         <filter id="protanopia">
-        <feColorMatrix
-            in="SourceGraphic"
-            type="matrix"
-            values="0.567, 0.433, 0,     0, 0
-                    0.558, 0.442, 0,     0, 0
-                    0,     0.242, 0.758, 0, 0
-                    0,     0,     0,     1, 0"/>
+        <feColorMatrix values="0.152  1.053 -0.205  0.000  0.000
+                               0.115  0.786  0.099  0.000  0.000
+                              -0.004 -0.048  1.052  0.000  0.000
+                               0.000  0.000  0.000  1.000  0.000">
+        </feColorMatrix>
         </filter>
         <filter id="protanomaly">
         <feColorMatrix
@@ -34,13 +33,11 @@
                     0,     0,     0,     1, 0"/>
         </filter>
         <filter id="deuteranopia">
-        <feColorMatrix
-            in="SourceGraphic"
-            type="matrix"
-            values="0.625, 0.375, 0,   0, 0
-                    0.7,   0.3,   0,   0, 0
-                    0,     0.3,   0.7, 0, 0
-                    0,     0,     0,   1, 0"/>
+            <feColorMatrix values="0.367  0.861 -0.228  0.000  0.000
+                                   0.280  0.673  0.047  0.000  0.000
+                                  -0.012  0.043  0.969  0.000  0.000
+                                   0.000  0.000  0.000  1.000  0.000">
+            </feColorMatrix>
         </filter>
         <filter id="deuteranomaly">
         <feColorMatrix
@@ -52,13 +49,11 @@
                     0,     0,     0,     1, 0"/>
         </filter>
         <filter id="tritanopia">
-        <feColorMatrix
-            in="SourceGraphic"
-            type="matrix"
-            values="0.95, 0.05,  0,     0, 0
-                    0,    0.433, 0.567, 0, 0
-                    0,    0.475, 0.525, 0, 0
-                    0,    0,     0,     1, 0"/>
+            <feColorMatrix values="1.256 -0.077 -0.179  0.000  0.000
+                                  -0.078  0.931  0.148  0.000  0.000
+                                   0.005  0.691  0.304  0.000  0.000
+                                   0.000  0.000  0.000  1.000  0.000">
+            </feColorMatrix>
         </filter>
         <filter id="tritanomaly">
         <feColorMatrix
@@ -70,13 +65,11 @@
                     0,     0,     0,     1, 0"/>
         </filter>
         <filter id="achromatopsia">
-        <feColorMatrix
-            in="SourceGraphic"
-            type="matrix"
-            values="0.299, 0.587, 0.114, 0, 0
-                    0.299, 0.587, 0.114, 0, 0
-                    0.299, 0.587, 0.114, 0, 0
-                    0,     0,     0,     1, 0"/>
+            <feColorMatrix values="0.213  0.715  0.072  0.000  0.000
+                                   0.213  0.715  0.072  0.000  0.000
+                                   0.213  0.715  0.072  0.000  0.000
+                                   0.000  0.000  0.000  1.000  0.000">
+            </feColorMatrix>
         </filter>
         <filter id="achromatomaly">
         <feColorMatrix
@@ -106,7 +99,7 @@
         <div id="mainDiv"> <!-- class="sample" id="mainDiv" -->
             <div class="top">
                 <div class="left">
-                    <button id="colorBlindnessButton" onclick="animateDivs()">
+                    <button id="colorBlindnessButton" onclick="animateDivs()" aria-label="colorBlindnessButton">
                         <svg class="eye_main" width="24" height="24" viewBox="0 0 30 30" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
                             <defs>
                                 <path d="M0,15.089434 C0,16.3335929 5.13666091,24.1788679 14.9348958,24.1788679 C24.7325019,24.1788679 29.8697917,16.3335929 29.8697917,15.089434 C29.8697917,13.8456167 24.7325019,6 14.9348958,6 C5.13666091,6 0,13.8456167 0,15.089434 Z" id="outline" fill="black"></path>
@@ -124,7 +117,7 @@
                 </div>
                 <div class="right">
                     <span id="filterValue">0</span>
-                    <button class="copycode" id="copyButton">
+                    <button class="copycode" id="copyButton" aria-label="copycodeButton">
                         <svg class="copysvg" xmlns="http://www.w3.org/2000/svg" height="18" viewBox="0 -960 960 960" width="18"><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"/></svg>
                         <svg class="donesvg" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
                     </button>
@@ -136,7 +129,7 @@
                     <span id="filterName">Type : <br>None type</span>
                 </div>
                 <div class="right_bottom">
-                    <button class="info_button" id="info_button" onclick="openPop('info_1'); animateDiv()">
+                    <button class="info_button" id="info_button" onclick="openPop('info_1')" aria-label="infoButton">
                         <svg class="info_svg" xmlns="http://www.w3.org/2000/svg" height="18" viewBox="0 -960 960 960" width="18"><path d="M440-280h80v-240h-80v240Zm40-320q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600Zm0 520q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
                     </button>
                     <div class="tooltip_info">info!</div>
@@ -147,13 +140,13 @@
                                 <!--<button class="close_popup_button" onclick="closePop('info_1')">&times;</button>-->
                             </div>
                             <div class="divider"></div>
-                            <div class="information">This is a Color Blindness Simulator where you can simulate all 7 types of color blindness and see each type displayed. You can also simply copy the "EYE" and add it to your webpage and go through all filters to check how accessible your webpage is for the Color Blind individuals.<br><br>Filters are from : <span class="github_user" onclick="window.open('https://github.com/hail2u', '_blank')">hail2u</span> <span class="github_svg" onclick="window.open('https://github.com/hail2u/color-blindness-emulation', '_blank')">[Github Link]</span></div>
+                            <div class="information">This is a Color Blindness Simulator where you can simulate all 7 types of color blindness and see each type displayed. You can also simply copy the "EYE" and paste it on your webpage and go through all filters to check how accessible your webpage is for the Color Blind individuals.<br><br>Some are default filters of Chrome <span class="chromium_link" onclick="window.open('https://developer.chrome.com/docs/chromium/cvd', '_blank')">[Chromium Link]</span> and the others are from <span class="github_user" onclick="window.open('https://github.com/hail2u', '_blank')">hail2u</span> <span class="github_link" onclick="window.open('https://github.com/hail2u/color-blindness-emulation', '_blank')">[Github Link] </span></div>
                             <div class="delete_buttons">
                             <button class="cancel_only" onclick="closePop('info_1')">CLOSE</button>
                             </div>
                         </div>
                     </div>
-                    <button class="git" onclick="window.open('https://github.com/Praashoo7/Color-Blindness-Simulator', '_blank')">
+                    <button class="git" onclick="window.open('https://github.com/Praashoo7/Color-Blindness-Simulator', '_blank')" aria-label="gitStarButton">
                         <svg id='star' aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-star mr-1" >
                             <defs>
                                 <filter id="sofGlow" height="300%" width="300%" x="-75%" y="-75%">

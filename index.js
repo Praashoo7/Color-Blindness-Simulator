@@ -4,10 +4,10 @@ let currentFilterIndex = 0;
   const filters = [
     { name: 'Type : <br>None type', value: 'none' },
     { name: 'Type : <br>Protanopia', value: 'url(#protanopia)' },
-    { name: 'Type : <br>Deuteranopia', value: 'url(#deuteranopia)' },
-    { name: 'Type : <br>Tritanopia', value: 'url(#tritanopia)' },
     { name: 'Type : <br>Protanomaly', value: 'url(#protanomaly)' },
+    { name: 'Type : <br>Deuteranopia', value: 'url(#deuteranopia)' },
     { name: 'Type : <br>Deuteranomaly', value: 'url(#deuteranomaly)' },
+    { name: 'Type : <br>Tritanopia', value: 'url(#tritanopia)' },
     { name: 'Type : <br>Tritanomaly', value: 'url(#tritanomaly)' },
     { name: 'Type : <br>Achromatopsia', value: 'url(#achromatopsia)' },
     { name: 'Type : <br>Achromatomaly', value: 'url(#achromatomaly)' }
@@ -304,10 +304,10 @@ version="1.1">
       const filters = [
           { name: 'Type : <br>None type [0]', value: 'none' },
           { name: 'Type : <br>Protanopia [1]', value: 'url(#protanopia)' },
-          { name: 'Type : <br>Deuteranopia [2]', value: 'url(#deuteranopia)' },
-          { name: 'Type : <br>Tritanopia [3]', value: 'url(#tritanopia)' },
           { name: 'Type : <br>Protanomaly [4]', value: 'url(#protanomaly)' },
+          { name: 'Type : <br>Deuteranopia [2]', value: 'url(#deuteranopia)' },
           { name: 'Type : <br>Deuteranomaly [5]', value: 'url(#deuteranomaly)' },
+          { name: 'Type : <br>Tritanopia [3]', value: 'url(#tritanopia)' },
           { name: 'Type : <br>Tritanomaly [6]', value: 'url(#tritanomaly)' },
           { name: 'Type : <br>Achromatopsia [7]', value: 'url(#achromatopsia)' },
           { name: 'Type : <br>Achromatomaly [8]', value: 'url(#achromatomaly)' }

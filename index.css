@@ -466,11 +466,11 @@ body{
     opacity: 0.8;
     cursor: pointer;
 }
-.github_user, .github_svg{
+.github_user, .github_link, .chromium_link{
     transition: .3s ease-in-out;
     cursor: pointer;
 }
-.github_user:hover, .github_svg:hover{
+.github_user:hover, .github_link:hover, .chromium_link:hover{
     color: red;
 }
 .information{
