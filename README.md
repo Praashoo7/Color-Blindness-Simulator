@@ -7,7 +7,7 @@ This is a Color Blindness Simulator where you can simulate all 7 types of color 
 ## Copied Button
 
 This is what the Copied Button[iframe] looks like which you can add on your webpage to go through all Filters!<br>
-Or you can get the Source Code [Here](https://praashoo7.github.io/Color-Blindness-Simulator/Button/index.html)
+Or you can get the Source Code [Here](https://praashoo7.github.io/Color-Blindness-Simulator/Button/index.html).
 
 ![Copied Code Image](ReadMe-Images/Copied-Code.png)
 
