@@ -11,10 +11,6 @@ Or you can get the Source Code [Here](https://praashoo7.github.io/Color-Blindnes
 
 ![Copied Code Image](ReadMe-Images/Copied-Code.png)
 
-## Credits
-
-Filters are from [hail2u](https://github.com/hail2u) [Repo](https://github.com/hail2u/color-blindness-emulation)
-
 ## License
 
 Color-Blindness-Simulator is open-source Software Licensed under the [MIT License](https://github.com/Praashoo7/Color-Blindness-Simulator/blob/main/LICENSE)
