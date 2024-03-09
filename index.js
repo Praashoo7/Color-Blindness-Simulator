@@ -121,7 +121,6 @@ function closePop(ID) {
 
 /* --------------------- COPY-CODE --------------------- */
 
-// Define a variable to store the text
 var textToCopy = `
 
 <link rel="stylesheet" type="text/css" href="https://praashoo7.github.io/Color-Blindness-Simulator/Button/style.css">
@@ -135,43 +134,32 @@ var textToCopy = `
 `;
 
 document.getElementById("copyButton").addEventListener("click", function() {
-  // Create a temporary textarea element
+
   var tempTextArea = document.createElement("textarea");
-
-  // Set the text content of the textarea to the text to be copied
   tempTextArea.textContent = textToCopy;
-
-  // Append the textarea to the DOM
   document.body.appendChild(tempTextArea);
 
-  // Select the text inside the textarea
   tempTextArea.select();
-  tempTextArea.setSelectionRange(0, 99999); /* For mobile devices */
+  tempTextArea.setSelectionRange(0, 99999);
 
-  // Copy the selected text
   document.execCommand("copy");
 
-  // Remove the temporary textarea from the DOM
   document.body.removeChild(tempTextArea);
 
-  // Select the first element with class 'copysvg'
-var copySVG = document.querySelector('.copysvg');
-// Select the first element with class 'donesvg'
-var doneSVG = document.querySelector('.donesvg');
-var tooltipText = document.querySelector('.tooltip_copy');
+  var copySVG = document.querySelector('.copysvg');
+  var doneSVG = document.querySelector('.donesvg');
+  var tooltipText = document.querySelector('.tooltip_copy');
 
-// Hide 'copysvg' and show 'donesvg'
-copySVG.style.display = 'none';
-doneSVG.style.display = 'block';
-tooltipText.textContent = 'Copied!';
-tooltipText.style.marginRight = '0.75em';
+  copySVG.style.display = 'none';
+  doneSVG.style.display = 'block';
+  tooltipText.textContent = 'Copied!';
+  tooltipText.style.marginRight = '0.75em';
 
-// Set a timeout to revert the changes after 3 seconds
-setTimeout(function() {
-  // Show 'copysvg' and hide 'donesvg'
-  copySVG.style.display = 'block';
-  doneSVG.style.display = 'none';
-  tooltipText.textContent = 'Copy code!';
-  tooltipText.style.marginRight = 0;
-}, 3000); // 3000 milliseconds = 3 seconds
+  setTimeout(function() {
+    copySVG.style.display = 'block';
+    doneSVG.style.display = 'none';
+    tooltipText.textContent = 'Copy code!';
+    tooltipText.style.marginRight = 0;
+  }, 3000);
+
 });
