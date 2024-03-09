@@ -478,13 +478,13 @@ body{
     opacity: 0.8;
     cursor: pointer;
 }
-.github_user, .github_link, .chromium_link, .info_link{
+.github_user, .github_link, .chromium_link, .info_link, .reactComp_link{
     display: inline-block;
-    font-weight: 600;
+    font-weight: 635;
     transition: .3s ease-in-out;
     cursor: pointer;
 }
-.github_user::after, .github_link::after, .chromium_link::after, .info_link::after {
+.github_user::after, .github_link::after, .chromium_link::after, .info_link::after, .reactComp_link::after {
     content: '';
     width: 0px;
     margin-top: -0.15em;
@@ -494,7 +494,7 @@ body{
     transition: 300ms;
     line-height: 0em;
 }
-.github_user:hover::after, .github_link:hover::after, .chromium_link:hover::after, .info_link:hover::after{
+.github_user:hover::after, .github_link:hover::after, .chromium_link:hover::after, .info_link:hover::after, .reactComp_link:hover::after{
     width: 100%;
 }
 .information{
