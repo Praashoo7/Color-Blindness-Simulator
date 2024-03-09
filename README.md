@@ -11,6 +11,10 @@ Or you can get the Raw Source Code [Here](https://htmlpreview.github.io/?https:/
 
 ![Copied Code Image](ReadMe-Images/Copied-Code.png)
 
+## Credits
+
+Filters are from [Chromium](https://developer.chrome.com/docs/chromium/cvd) & [hail2u](https://github.com/hail2u) [[Repo]](https://github.com/hail2u/color-blindness-emulation)
+
 ## License
 
 Color-Blindness-Simulator is open-source Software Licensed under the [MIT License](https://github.com/Praashoo7/Color-Blindness-Simulator/blob/main/LICENSE)
