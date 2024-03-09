@@ -131,6 +131,9 @@ var textToCopy = `
 </div>
 <script src="https://praashoo7.github.io/Color-Blindness-Simulator/Button/script.js"></script>
 
+
+<!-- GET THE REACT COMPONENT HERE : https://github.com/Praashoo7/Color-Blindness-Simulator/blob/main/ReactComponent/ReactComponent.js -->
+<!-- GET THE FULL CODE HERE : https://github.com/Praashoo7/Color-Blindness-Simulator/blob/main/Button/Button_RAW.html -->
 `;
 
 document.getElementById("copyButton").addEventListener("click", function() {
