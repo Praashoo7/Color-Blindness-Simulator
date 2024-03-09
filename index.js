@@ -13,26 +13,46 @@ let currentFilterIndex = 0;
     { name: 'Type : <br>Achromatomaly', value: 'url(#achromatomaly)' }
   ];
 
+  /*let currentInfoIndex = 0;
+  const info = [
+    { data: ''},
+    { data: 'Red Color Blindness.'},
+    { data: 'A mild form of Red color blindness.'},
+    { data: 'Green Color Blindness.'},
+    { data: 'A mild form of Green color blindness.'},
+    { data: 'Blue Color Blindness.'},
+    { data: 'A mild form of Blue color blindness.'},
+    { data: 'No Color.'},
+    { data: 'A mild color blindness from all colors.'},
+  ];*/
+
   const colorBlindnessButton = document.getElementById('colorBlindnessButton');
   const spanElement = document.getElementById('filterValue');
   const filterNameSpan = document.getElementById('filterName');
+  /*const dataSpan = document.getElementById('data');*/
 
 
   colorBlindnessButton.addEventListener('click', () => {
     currentFilterIndex = (currentFilterIndex + 1) % filters.length;
+    /*currentInfoIndex = (currentInfoIndex + 1) % info.length;*/
     applyColorBlindnessFilter();
     updateSpanInfo();
   });
 
   function applyColorBlindnessFilter() {
     const filter = filters[currentFilterIndex].value;
-    document.body.style.filter = filter;
+    setTimeout(() => {
+      document.body.style.filter = filter;
+    }, 100);
   }
 
   function updateSpanInfo() {
     const filterName = filters[currentFilterIndex].name;
     spanElement.textContent = currentFilterIndex;
     filterNameSpan.innerHTML = filterName;
+
+    /*const infoData = info[currentInfoIndex].data;
+    dataSpan.innerHTML = infoData;*/
 }
 
 
@@ -185,7 +205,7 @@ version="1.1">
 </defs>
 </svg>
 
-<div class="main">
+<div class="mainColorBlindness">
 <button id="colorBlindnessButton">
     <svg class="eye_main" width="24" height="24" viewBox="0 0 30 30" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
         <defs>
@@ -212,7 +232,7 @@ version="1.1">
         display: none;
     }
     
-    .main{
+    .mainColorBlindness{
       position: relative;
       padding: 0.5em;
       padding-right: 0.85em;
