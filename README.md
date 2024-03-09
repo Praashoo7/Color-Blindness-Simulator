@@ -4,12 +4,12 @@ This is a Color Blindness Simulator where you can simulate all 7 types of color 
 
 ![Readme Image](ReadMe-Images/Color-Blindness-Simulator.png)
 
-## Copied Button
+## Button
 
 This is what the Copied Button looks like which you can add on your webpage to go through all Filters!<br>
 Get the Button [Here](https://github.com/Praashoo7/Color-Blindness-Simulator/blob/main/Button/Button.html), Raw Source Code for the Button [Here](https://htmlpreview.github.io/?https://github.com/Praashoo7/Color-Blindness-Simulator/blob/main/Button/Button_RAW.html) and the React Component [Here](https://github.com/Praashoo7/Color-Blindness-Simulator/blob/main/ReactComponent/ReactComponent.js).
 
-![Copied Code Image](ReadMe-Images/Copied-Code.png)
+![Button Image](ReadMe-Images/Button.png)
 
 ## Credits
 
