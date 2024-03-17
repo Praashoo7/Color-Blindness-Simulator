@@ -1,4 +1,4 @@
-# [Color-Blindness-Simulator](https://praashoo7.github.io/Photo-Gallery-React/)
+# [Color-Blindness-Simulator](https://praashoo7.github.io/Color-Blindness-Simulator/)
 
 This is a Color Blindness Simulator where you can simulate all 7 types of color blindness and see each type displayed. You can also simply copy the "EYE" and paste it on your webpage and go through all filters to check how accessible your webpage is for the Color Blind individuals. There is also a React Component for it!
 
